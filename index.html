@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <nav>
+        <h1>Web Portfolio</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#others">Others</a></li>
+             <button id="toggle">🌙</button>
+        </ul>
+    </nav>
+</html>
+
+<script>
+  document.getElementById("toggle").onclick = function () {
+    document.body.classList.toggle("dark");
+    this.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+  };
+</script>
+
+<div class="profile-card">
+    <img src="ram.png" alt="ramie" class="profile-img">
+    <h1>Hello I'm Jan Ramie Palomado</h1>
+    <p>Hi! I'm a 2nd-year Bachelor of Science in Information Technology 
+        (BSIT) student with an interest in computers, programming
+        , and software development. I'm continuously learning new 
+        skills, improving my coding abilities, and exploring different 
+        technologies. My goal is to become a skilled software developer and 
+        create useful solutions through technology.
+    </p>
+</div>
+<div class="Skills">
+    <h1 id="about">Skills</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Basic Programming</h3>
+            <p>Understanding basic programming concepts, including variables, loops, and conditional statements.</p>
+        </div>
+
+        <div class="card">
+            <h3>SQL & Database Management</h3>
+            <p>Writing basic SQL queries and managing data.</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Troubleshooting</h3>
+            <p>Basic computer maintenance and resolving common PC issues.</p>
+        </div>
+
+        <div class="card">
+            <h3>UI Design</h3>
+            <p>Creating simple interfaces and layouts using design tools.</p>
+        </div>
+    </div>
+</div>
+<div class="Education">
+    <h1>Education</h1>
+</div>
+</div>
+<div class="slider">
+  <div class="track" id="track">
+
+    <div class="slide">
+      <img src="secmes.png" alt="Batangas State University">
+      <div class="overlay">
+        <h2>Sariaya East Central Main Elementary School<br>Elementary</h2>
+        <p>Grade 1-6</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="cstcseniorhigh.png" alt="Southern Luzon State University">
+      <div class="overlay">
+        <h2>College of Sciences, Technologies and Communication Inc.<br>Senior High</h2>
+        <p>Humanities and Social Sciences Track<br>2023-2025</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="cstccollege.png" alt="CSTC">
+      <div class="overlay">
+        <h2>College of Sciences, Technologies and Communication Inc.<br>College</h2>
+        <p>Information and Technology (IT)<br>2026-2027</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="buttons">
+  <button onclick="document.getElementById('track').style.transform = 'translateX(0%)'">1</button>
+  <button onclick="document.getElementById('track').style.transform = 'translateX(-100%)'">2</button>
+  <button onclick="document.getElementById('track').style.transform = 'translateX(-200%)'">3</button> 
+</div>
+
+<h1 class="awards-title">Awards</h1>
+
+<div class="awards">
+  <div class="award">
+    <h3>With Honors (SHS)</h3>
+    <p>Recognized for good academic performance and dedication to learning. (2024-2025 SY)</p>
+  </div>
+
+  <div class="award">
+    <h3>Certificate of Completion</h3>
+    <p>Awarded for successfully completing a training program, seminar, workshop, or educational activity.</p>
+  </div>
+
+  <div class="award">
+    <h3>Certificate of Participation</h3>
+    <p>Recognized for active participation and involvement in school activities.</p>
+  </div>
+</div>
+
+<div class="hobbies-box">
+  <h1 id="others">My Hobbies</h1>
+
+  <div class="hobbies">
+    <div class="hobby">
+      <img src="programming.png" alt="Programming">
+      <div class="info">
+        <h3>Programming</h3>
+        <p>Learning and building</p>
+      </div>
+    </div>
+
+    <div class="hobby">
+      <img src="cycling.png" alt="Cycling">
+      <div class="info">
+        <h3>Cycling</h3>
+        <p>Outdoor adventures</p>
+      </div>
+    </div>
+
+    <div class="hobby">
+      <img src="gaming.png" alt="Gaming">
+      <div class="info">
+        <h3>Gaming</h3>
+        <p>Games and entertainment</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 class="projects-title">Project Accomplished</h1>
+
+<div class="projects">
+  <div class="project">
+    <img src="project1.png" alt="Project 1">
+    <h3>Simple c++ calculator</h3>
+  </div>
+
+  <div class="project">
+    <img src="project2.png" alt="Project 2">
+    <h3>c# calculator</h3>
+  </div>
+
+  <div class="project">
+    <img src="project3.png" alt="Project 3">
+    <h3>Web Portfolio</h3>
+  </div>
+</div>
+
+<footer id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-list">
+    <a href="tel:+639XXXXXXXXX">📞 0991 694 4845</a>
+    <a href="mailto:yourname@email.com">✉️ janramie456@email.com</a>
+    <a href="https://www.youtube.com/@janramie5141" target="_blank">▶️ YouTube</a>
+    <a href="https://www.instagram.com/ram.sjxi/" target="_blank">📷 Instagram</a>
+  </div>
+
+  <p class="copyright">© 2026 Jan Ramie Palomado. All rights reserved.</p>
+</footer>
+
